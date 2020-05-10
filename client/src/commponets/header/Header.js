@@ -12,6 +12,9 @@ function Header() {
             <a href="sass.html">Sass</a>
           </li>
           <li>
+            <a href="scss.html">Scss</a>
+          </li>
+          <li>
             <a href="badges.html">Components</a>
           </li>
           <li>
