@@ -9,16 +9,16 @@ function Header() {
         </a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li>
-            <a href="sass.html">Sass</a>
+            <a href="#">Sass</a>
           </li>
           <li>
-            <a href="scss.html">Scss</a>
+            <a href="#">Scss</a>
           </li>
           <li>
-            <a href="badges.html">Components</a>
+            <a href="#">Components</a>
           </li>
           <li>
-            <a href="collapsible.html">JavaScript</a>
+            <a href="#">JavaScript</a>
           </li>
         </ul>
       </div>
