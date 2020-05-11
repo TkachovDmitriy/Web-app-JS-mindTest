@@ -1,13 +1,16 @@
 import React from "react";
 import Header from "./commponets/header/Header";
-import AddButton from "./commponets/buttons/AddButton";
+import SubmitBtn from "./commponets/buttons/SubmitBtn";
+import MainContainer from "./commponets/mainContainer/MainContainer";
+import Footer from "./commponets/footer/Footer";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <h1>Hello world</h1>
-      <AddButton />
+      <MainContainer />
+      <SubmitBtn />
+      <Footer />
     </div>
   );
 }
