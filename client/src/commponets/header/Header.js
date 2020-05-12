@@ -1,5 +1,5 @@
 import React from "react";
-const style = {backgroundColor:'#38bfa1'}
+const style = {backgroundColor:'#38afa1'}
 
 function Header() {
   return (

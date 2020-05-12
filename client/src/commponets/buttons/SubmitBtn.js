@@ -1,18 +1,17 @@
 import React from "react";
-const style = { 
-    display:'flex',
-    alignItems:'center',
-    justifyContent:'center',
-    marginBottom:'50px',
+const style = {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
 }
 
-function SubmitBtn () {
+function SubmitBtn() {
     return (
         <>
-        <div style={style}>
-
-            <a className="waves-effect waves-light btn">Let's start!!!<i class="material-icons left">chevron_right</i></a>
-            
+            <div style={style}>
+                <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                     <i class="material-icons right">send</i>
+                </button>
             </div>
         </>
     );
