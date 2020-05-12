@@ -13,6 +13,8 @@ import {
 } from "react-router-dom";
 import Header from "./commponets/header/Header";
 import MainContainer from "./commponets/mainContainer/MainContainer";
+import {AdminPanel} from "./commponets/dashBoard/AdminPanel";
+
 import MainCheckCategory from "./commponets/mainCheckCategory/MainCheckCategory";
 import Footer from "./commponets/footer/Footer";
 
@@ -36,6 +38,7 @@ function App() {
         <Container>
           <Switch>
             <Route exact path="/" component={MainContainer} />
+            <Route exact path="/admin" component={AdminPanel} />
             <Route exact path="/p" component={MainCheckCategory} />
           </Switch>
         </Container>
