@@ -1,11 +1,13 @@
 import React from "react";
 import { Category } from "./Category";
 import Grid from '@material-ui/core/Grid';
+const style = {
+  padding:'20px'
+}
 
-
-function MainCheckCategory() {
+function MainChooseCategory() {
   return (
-        <Grid item xs={12}>
+        <Grid item xs={12} style={style}>
           <Grid container justify="center" spacing={2}>
             {[0, 1, 2, 3, 4, 5].map((value) => (
               <Grid key={value} item>
@@ -17,4 +19,4 @@ function MainCheckCategory() {
   );
 }
 
-export default MainCheckCategory;
+export default MainChooseCategory;
