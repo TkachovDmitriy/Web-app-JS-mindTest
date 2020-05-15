@@ -1,8 +1,6 @@
 import React from "react";
 
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
-import Button from "@material-ui/core/Button";
-import purple from "@material-ui/core/colors/purple";
 import Container from "@material-ui/core/Container";
 
 import {
@@ -13,7 +11,11 @@ import {
 } from "react-router-dom";
 import Header from "./commponets/header/Header";
 import MainContainer from "./commponets/mainContainer/MainContainer";
-import MainCheckCategory from "./commponets/mainCheckCategory/MainCheckCategory";
+import {AdminPanel} from "./commponets/dashBoard/AdminPanel";
+import QuizWindow from "./commponets/quizWindow/QuizWindow";
+
+import MainChooseCategory from "./commponets/mainChooseCategory/MainChooseCategory";
+import Music from "./commponets/mainChooseCategory/categories/Music";
 import Footer from "./commponets/footer/Footer";
 
 const theme = createMuiTheme({
@@ -36,7 +38,10 @@ function App() {
         <Container>
           <Switch>
             <Route exact path="/" component={MainContainer} />
-            <Route exact path="/p" component={MainCheckCategory} />
+            <Route exact path="/admin" component={AdminPanel} />
+            <Route exact path="/p" component={MainChooseCategory} />
+            <Route exact path="/quiz" component={QuizWindow} />
+            <Route exact path="/music" component={Music} />
           </Switch>
         </Container>
       </ThemeProvider>
