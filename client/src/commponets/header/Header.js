@@ -19,6 +19,10 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+const linkStyles =  {
+  textDecoration: "none",
+  color: "white"
+}
 export default function Header() {
   const classes = useStyles();
 
@@ -37,7 +41,12 @@ export default function Header() {
           <Typography variant="h6" className={classes.title}>
             News
           </Typography>
-          <Button color="inherit">Login</Button>
+          <Button color="inherit">
+              <a style = {linkStyles}  href="./Login"> Login </a> 
+          </Button>
+          <Button color="inherit">
+              <a style = {linkStyles}  href="./Registry"> Registry </a>
+          </Button>
         </Toolbar>
       </AppBar>
     </div>
