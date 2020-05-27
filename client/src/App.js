@@ -13,7 +13,8 @@ import Header from "./commponets/header/Header";
 import MainContainer from "./commponets/mainContainer/MainContainer";
 import {AdminPanel} from "./commponets/dashBoard/AdminPanel";
 import QuizWindow from "./commponets/quizWindow/QuizWindow";
-
+import Login from "./commponets/login/Login";
+import Registry from "./commponets/registry/Registry";
 import MainChooseCategory from "./commponets/mainChooseCategory/MainChooseCategory";
 import Music from "./commponets/mainChooseCategory/categories/Music";
 import Footer from "./commponets/footer/Footer";
@@ -37,9 +38,11 @@ function App() {
         <Header />
         <Container>
           <Switch>
-            <Route exact path="/" component={MainContainer} />
+            <Route exact path="/main" component={MainContainer} />
             <Route exact path="/admin" component={AdminPanel} />
-            <Route exact path="/p" component={MainChooseCategory} />
+            <Route exact path="/login" component={Login} />
+            <Route exact path="/registry" component={Registry} />
+            <Route exact path="/choose" component={MainChooseCategory} />
             <Route exact path="/quiz" component={QuizWindow} />
             <Route exact path="/music" component={Music} />
           </Switch>
